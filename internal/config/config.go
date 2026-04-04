@@ -9,7 +9,8 @@ type Config struct {
 }
 
 type HTTPServer struct {
-	Address string `env:"address" env-default:"localhost:8085"`
+	Address string `env:"address" env-default:"localhost"`
+    Port string `env:"PORT" env-default:"8085"`
 }
 
 
